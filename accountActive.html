@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>账号激活</title>
+<link href="style/css/global.css" rel="stylesheet" type="text/css">
+<link href="style/css/accountActive.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/view.js"></script>
+<style type="text/css">
+
+</style>
+</head>
+<body>
+  <div class="g-doc">
+  	<div class="g-hd">
+  		<div class="m-logo clearfix">
+  			<div class="logo-tag"><span class="logo_bg"></span><a href="#" class="png_bg" ></a></div>
+  			<div class="logo-title "></div>
+  		</div>
+  	</div>
+  	<div class="g-bd clearfix">
+        <div class="m-active">
+           <div class="title">
+             <h4><strong>账号激活</strong></h4>
+             <p>您的帐号<strong>EnjoyUSA</strong>已超过一年未登录过游戏大厅，为了保护账号财产安全，请激活后再登录！</p>
+           </div>
+           <div class="active step1" >
+              <div class="process">
+                <ul class="clearfix">
+                  <li class="sp1 curStep">短信验证</li><li class="sp2">修改密码</li><li class="sp3">重新登录</li>
+                </ul>
+              </div>
+              <div class="validate m-validate">
+                    <form id="VForm">
+                        <div class="field clearfix">
+                             <div class="ifo_lable">激活账号：</div>
+                             <div class="ifo_input">
+                               <strong>EnjoyUSA</strong>
+                             </div>
+                        </div>
+                        <div class="field clearfix">
+                            <div class="ifo_lable">激活手机号：</div>
+                            <div class="ifo_input">
+                             <input data-reg='mobile' name='phone' id='phone'   type="text" placeholder="" />
+                            </div>
+                            <div class="ifo ifoTip" style="display:block">
+                              <div class="tip-over">该手机号超出了限制，请使用其它号码登录，给您带来不便尽情谅解</div>
+                            </div>
+                        </div>
+                        <div class="field clearfix">
+                            <div class="ifo_lable">验证码：</div>
+                            <div class="ifo_input phone_code_box ">
+                                <input data-reg="mobileCode" id="code" class="inputCode"  type="text" placeholder="验证码" />
+                                <button type="button" verifyType="" class="getCode phoneCode">点击获取手机验证码</button>
+                            </div>
+                            <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="field clearfix">
+                            <div class="ifo_lable">账号绑定手机：</div>
+                            <div class="ifo_input checkBind">
+                                <label>
+                                   <input type="checkbox" />是，绑定后可通过手机重置登录密码，还可领取银两奖励。
+                                </label>    
+                            </div>
+                            <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="field btn_submit clearfix">
+                            <div class="ifo_lable"></div>
+                            <div class="ifo_input submit change_account">
+                              <input id="submit" type="submit" value="确定修改" title="确定修改" />
+                              <a href="" class="d-link">更改登录账号&gt;&gt;</a>
+                            </div>
+                        </div>
+                    </form>
+               </div>
+           </div>
+           <div class="active step2" >
+              <div class="process">
+                <ul class="clearfix">
+                  <li class="sp1 ">短信验证</li><li class="sp2 curStep">修改密码</li><li class="sp3">重新登录</li>
+                </ul>
+              </div>
+              <div class="validate m-validate">
+                    <form id="VForm">
+                        <div class="field clearfix">
+                            <div class="ifo_lable">新登录密码：</div>
+                            <div class="ifo_input">
+                               <input data-reg="pwd" id="pwd" type="password" data-refer="haoliang" placeholder="6-16位数字、字母" name="password"  /><i></i>
+                               <div class="strength"><label>密码强度：</label><span>弱</span><span>中</span><span>高</span></div>
+                            </div>
+                            <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="field confirm_pwd clearfix">
+                            <div class="ifo_lable">确认新登录密码：</div>
+                            <div class="ifo_input">
+                               <input data-reg="pwdRepeat" id="pwdRepeat" data-refer="pwd" type="password"  name="repeatPassword"  /><i></i>
+                            </div>
+                            <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="field checkSend clearfix">
+                             <div class="ifo_lable"></div>
+                             <div class="ifo_input">
+                                <label><input type="checkbox" />同时将新密码发送到手机</label>
+                             </div>
+                        </div>
+                        <div class="field btn_submit clearfix">
+                            <div class="ifo_lable"></div>
+                            <div class="ifo_input submit">
+                              <input id="submit" type="submit" value="确定修改" title="确定修改" />
+                            </div>
+                        </div>
+                    </form>
+               </div>
+           </div>
+           <div class="active step3">
+              <div class="process">
+                <ul class="clearfix">
+                  <li class="sp1 ">短信验证</li><li class="sp2 ">修改密码</li><li class="sp3 curStep">重新登录</li>
+                </ul>
+              </div>
+              <div class="result">
+                 <div class="r_detail success">
+                   <div class="r_title">帐号激活成功, 请重新登录大厅！</div>
+                   <p class="r_content">建议不定期更改密码，以保护帐号财产安全。</p>
+                 </div>
+               </div>
+           </div>           
+        </div>
+    </div>
+  	<div class="g-ft">
+      <div class="foot clearfix">
+        <div class="product fl">畅唐科技旗下产品：</div> 
+        <ul class="clearfix fl">
+          <li><a href="#" class="tcy"></a></li>
+          <li><a href="#" class="sq108"></a></li>
+          <li><a href="#" class="sqw"></a></li>
+          <li><a href="#" class="yd"></a></li>
+          <li><a href="#" class="xy"></a></li>
+        </ul>
+        <div class="copyright fr">© 2013 杭州畅唐科技有限公司 版权所有</div>
+      </div>
+    </div>
+  </div>  
+  <script language="javascript">
+        $(function () { $('#VForm').regsubmit(formValidate);
+            $("#pwd").bind("keyup", function() {
+                var objInput = $(this);
+                var objStreng = $(".strength span");
+               fnLeverStrength(objInput,objStreng);
+            });
+        });
+    </script>
+</body>
+</html>

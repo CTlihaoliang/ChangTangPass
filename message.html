@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>站内消息</title>
+<link href="style/css/global.css" rel="stylesheet" type="text/css">
+<link href="style/css/message.css" rel="stylesheet" type="text/css">
+<link href="style/css/dialogMessage.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/lhgdialog.min.js"></script>
+<script type="text/javascript" src="js/dMessage.min.js"></script>
+<script type="text/javascript" src="js/jquery.pager.js"></script>
+<script type="text/javascript" src="js/message.js"></script>
+</head>
+<body>
+  <div class="g-doc">
+  	<div class="g-hd">
+  		<div class="m-logo clearfix">
+  			<div class="logo-tag"><a href="#"></a></div>
+  			<div class="logo-title "></div>
+  		</div>
+  	</div>
+  	<div class="g-bd m-center clearfix" style="background-color:#f9f8f7">
+        <div class="m-menu fl">
+            <div class="menu">
+                <dl class="home">
+                    <dt><a href="index.html" ><b></b>首页</a></dt>
+                </dl>
+                <dl class="information">
+                    <dt class="bline"><i></i>个人资料</dt>
+                    <dd class="bline"><a href="baseInfo.html" ><b></b>基本信息</a></dd>
+                    <dd><a href="legalize.html"><b></b>实名认证</a></dd>
+                    <dd><a href="bindPhone.html"><b></b>绑定手机</a></dd>
+                    <dd class="uline"><a href="bindEmail.html"><b></b>绑定邮箱</a></dd>
+                </dl>
+                <dl class="safe">
+                    <dt class="bline"><i></i>安全中心</dt>
+                    <dd class="bline"><a href="loginPassword.html"><b></b>修改登录密码</a></dd>
+                    <dd><a href="protectPassword.html"><b></b>修改保护密码</a></dd>
+                    <dd><a href="unBind.html"><b></b>解绑大厅</a></dd>
+                    <dd><a href="loginRecord.html"><b></b>登录记录</a></dd>
+                    <dd><a href="sensitiveRecord.html"><b></b>敏感操作记录</a></dd>
+                </dl>
+
+            </div>
+        </div>
+        <div class="m-main fr">
+            <div id="message">
+               <div class="m-title">
+                 <h4><strong>站内消息</strong></h4>
+               </div>
+               <div class="sub-warp">
+                 <div class="message" id="listMessageBox">
+                      <div class="m-til" id="J_msg_til">
+                        <span class="on">全部 <input type="hidden" value="0" /></span>
+                        <span>用户中心<input type="hidden" value="1" /></span>
+                        <span>客服中心<input type="hidden" value="2" /></span>
+                        <span>道具商城<input type="hidden" value="3" /></span>
+                        <span>推广系统<input type="hidden" value="4" /></span>
+                      </div>
+                      <div id="msgLoadingBox" class="marTop10 hide"></div>
+                      <div id="msgCenterInfoBox" class="marTop10 hide" style="display: block;">
+                           <div class="action-state no-info">
+                              <div class="a-s-con" style="display:none">
+                               <h3 style="padding-top:14px">当前没有消息记录！</h3>
+                               <p></p>
+                              </div>
+                            </div>
+                      </div>
+                      <ul style="display:none">
+                           <li>
+                             <ul id="msgListMaster" class="m-list">
+                                <li>
+                                  <span class="m-li-td">
+                                    <input type="checkbox" id="chkMsgItem0" name="chkMsgItems" /><input type="hidden" value="4377426" /><input type="hidden" value="0" /><input type="hidden" value="0">
+                                  </span>
+                                  <span class="m-li-td2 msg-type" title="未读">&nbsp;</span>
+                                  <span class="m-li-td">[道具商城]</span>
+                                  <p class="m-li-td m-title fb" id="msgItemTitle4377426">
+                                    <a href="javascript:void(0);" onclick="seeMsgView(this,0,4377426)">奖励通知：充值会员附赠道具</a>
+                                  </p>
+                                  <div class="m-list-date">2014-03-10 20:43:12</div>
+                                </li>
+                                <li>
+                                  <span class="m-li-td">
+                                    <input type="checkbox" id="chkMsgItem7" name="chkMsgItems" /><input type="hidden" value="1914064" /><input type="hidden" value="7" /><input type="hidden" value="0" />
+                                  </span>
+                                  <span class="m-li-td2 msg-type-on" title="已读">&nbsp;</span>
+                                  <span class="m-li-td">[道具商城]</span>
+                                  <p class="m-li-td m-title" id="msgItemTitle1914064">
+                                    <a href="javascript:void(0);" onclick="seeMsgView(this,0,1914064)">奖励通知：2013— 充值中心五一充值赠送好礼
+                                    </a>
+                                  </p>
+                                  <div class="m-list-date">2013-04-28 10:33:28</div>
+                                 </li>
+                                </ul>
+                           </li>
+                      </ul>
+                      <div id="msgListAction" class="m-state hide" style="display: block;">
+                          <div class="m-s-td">
+                             <input type="checkbox" id="chkAllMsgItems" name="chkAllMsgItems" />
+                             <label for="chkAllMsgItems">全部</label>
+                          </div>
+                          <div class="m-s-td">
+                            <a href="javascript:void(0);" class="btn-b2" onclick="setMsgRead();return false;">设为已读<i></i>
+                            </a>
+                            <a href="javascript:void(0);" class="btn-b2" onclick="deleteMsgItems();return false;">删除所选<i></i>
+                            </a>
+                            <a href="javascript:void(0);" class="btn-b2" onclick="clearMsgItems();return false;">清空<i></i>
+                            </a>
+                          </div>
+                      </div>
+                      <div class="m-page">
+                          <div id="msgPgCnt" class="Pager2 hide" style="display: block;">共<span>74</span>条消息 当前<span>1</span>/<span>10</span>页
+                          </div>
+                          <div id="msgPgNum" class="Pager hide" style="display: block;">
+                              <div class="Pager">
+                                 <a href="javascript:void(0);" class="CurrentPage">1</a>
+                                 <a href="javascript:void(0);">2</a>
+                                 <a href="javascript:void(0);">3</a>
+                                 <a href="javascript:void(0);">4</a>
+                                 <a href="javascript:void(0);">5</a>
+                                 <a href="javascript:void(0);">6</a>
+                                 <a href="javascript:void(0);">7</a>
+                                 <a href="javascript:void(0);">下页</a>
+                                 <a href="javascript:void(0);">末页</a>
+                              </div>
+                          </div>
+                      </div>
+                 </div>
+              </div>
+            </div>
+        </div>
+  	</div>
+  	<div class="g-ft">
+      <div class="foot clearfix">
+        <div class="product fl">畅唐科技旗下产品：</div> 
+        <ul class="clearfix fl">
+          <li><a href="#" class="tcy"></a></li>
+          <li><a href="#" class="sq108"></a></li>
+          <li><a href="#" class="sqw"></a></li>
+          <li><a href="#" class="yd"></a></li>
+          <li><a href="#" class="xy"></a></li>
+        </ul>
+        <div class="copyright fr">© 2013 杭州畅唐科技有限公司 版权所有</div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

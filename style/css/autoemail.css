@@ -1,0 +1,4 @@
+.mailAutoTip{ display:none; position:absolute; left:0; top:38px; border:1px solid #ccc; background:#fff; z-index:10000;}
+.mailAutoTip li{ height:24px; line-height:24px; color:#777;}
+.mailAutoTip li a{ display:block; width:200px; height:24px; padding-left:5px; color:#333; overflow:hidden; }
+.mailAutoTip li a:hover,.mailAutoTip li.on a{ background:#f9f8f7; color:#000; text-decoration:none;}

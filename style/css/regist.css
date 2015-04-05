@@ -1,0 +1,75 @@
+.g-bd{padding:40px 0px 0px 20px;background-color: #fff;font-size: 14px;color: #555;border: 1px solid #e3e3e3;border-top:none;}
+.g-regist{width: 670px;}
+.regist-title{margin-left: 30px;height: 38px;background:url(../images/regist_title.png) left center no-repeat;text-indent: -999px}
+.m-tag{display: none;padding-left: 30px;height: 38px;border-bottom: 1px solid #cdcfd1;_overflow:hidden;}
+.m-tag li{float: left;margin-left: -1px;padding-left: 30px;height: 37px;line-height: 37px;width: 115px;text-align: center;border:1px solid #cdcfd1;border-bottom: none;cursor:pointer;}
+.m-tag .on{background-color: #fff;border-top:2px solid #f98945;_position:relative;}
+.m-tag .i_reg{background: url(../images/ico_identity.png)  20px 5px no-repeat;background-color: #fbfbfb}
+.m-tag .i_reg.on{background:#fff url(../images/ico_identity_h.png)  20px 5px no-repeat;}
+.m-tag .p_reg{background: url(../images/ico_phone.png)  20px 5px no-repeat;background-color: #fbfbfb}
+.m-tag .p_reg.on{background:#fff url(../images/ico_phone_h.png)  20px 5px no-repeat;}
+.m-tag .e_reg{background: url(../images/ico_email.png)  15px 6px no-repeat;background-color: #fbfbfb}
+.m-tag .e_reg.on{background:#fff url(../images/ico_email_h.png)  15px 6px no-repeat;}
+.m-regist{margin-top: 40px;}
+.m-regist .field{margin-top: 20px;}
+.m-regist .field input{border:none;}
+.m-regist .field .ifo_lable,.m-regist .field .ifo_input,.m-regist .field .ifo,.m-regist .field .change_code{float: left;height: 38px;line-height: 38px;}
+.m-regist .field .ifo_lable{width: 130px;text-align: right;}
+.m-regist .field .ifo_input{width: 220px;margin-left: 20px;}
+.m-regist .field .ifo_input .highlight1{border-color:#b0d366;}
+.m-regist .field .ifo_input .highlight2{border-color:#f49488;}
+.m-regist .field .ifo_input input{height: 28px;line-height:28px;width: 185px;padding:4px 25px 4px 8px;border: 1px solid ;border-color:#e6e6e6 ;border-radius: 5px;*margin-left: -20px}
+.m-regist .field .ifo_input .iWrong{background: url(../images/ifo_wrong.png) right center no-repeat;}
+.m-regist .field .ifo_input .iRight{background: url(../images/ifo_right.png) right center no-repeat;}
+.m-regist .field .ifo{margin-left: 10px;width: 242px;font-size: 12px;padding-left: 15px;}
+.m-regist .field .ifoTip{position:relative;background: url(../images/ifo_border1.png) left center no-repeat;display: none;}
+.m-regist .field .ifoTip.error{background: url(../images/ifo_border2.png) left center no-repeat;}
+.m-regist .field .ifoTip .tip-over{position: absolute;left: 0px;top: 0px;height: 50px;width: 230px;padding-top: 10px;padding-left: 15px;padding-right: 10px;line-height: 20px;background: url(../images/ico_border3.png) no-repeat;}
+
+.m-regist .field .radio_input{border:none;*margin-left: 20px}
+.m-regist .field .radio_input input{height: 20px; width:20px}
+.m-regist .field .radio_input .sex_box{width: 74px;padding: 1px 1px 1px 1px;height: 24px;margin-top: 5px;background: #f98945;border-radius: 3px;*line-height: 24px;*width: 76px;}
+.m-regist .field .radio_input .sex_box a{display: inline-block;text-indent: 6px;height: 24px;line-height: 24px;width: 26px;text-align: left;vertical-align: top;cursor: pointer;background-color: #fff;*width: 20px;*text-indent: 0px;*padding-left: 6px;}
+.m-regist .field .radio_input .sex_box .checked{color: #fff;font-weight: bold;width: 48px;background: url(../images/ico_select.png) right center no-repeat;*width: 44px}
+
+.m-regist .field .phone_code_box{}
+.m-regist .field .code_input{position: relative;width: 136px}
+.m-regist .field .code_input img.code_enlarge{left:-1px;top:-55px;width:122px;height:52px;border:1px solid #e6e6e6;border-radius: 3px;cursor: default !important;}
+.m-regist .field .code_input input{width: 100px}
+.m-regist .field .code_input img{position: absolute;left: 70px;top:8px;height: 26px;width: 60px;cursor: pointer;}
+.m-regist .field .change_code{padding-left: 10px;font-size: 12px;}
+.m-regist .field .change_code a{color: #0082cb;}
+.m-regist .field .change_code a:hover{color: #f98945;}
+.m-regist .field .submit{border:none;}
+.m-regist .field .submit input{height: 40px;width: 220px;border:0 none;background: url(../images/btn_submit2.png) no-repeat 0px 0px;text-align: center;font:bold 16px "微软雅黑"; color: #fff;cursor: pointer;padding: 0px;}
+.m-regist .field .submit input:hover{background-position:0px -41px}
+.m-regist .field .submit input.disabled{cursor: default;background-position:0px -83px}
+.m-regist .btn_submit{margin-top: 35px}
+.m-regist  .user_agree{margin-top: 0px}
+.user_agree .arree_input{border:none;font-size: 12px;}
+.user_agree .arree_input a{cursor: pointer;color: #0082cb}
+.user_agree .arree_input a:hover{color: #f98945;}
+/*手机注册*/
+.m-regist-phone .phone_code_box input.inputCode{width: 75px;padding-right: 0px;border-radius:5px 0px 0px 5px;vertical-align:top;*margin-top: -1px}
+.m-regist-phone .phone_code_box button{border: none;font-size: 12px;}
+.m-regist-phone .phone_code_box button span{color:#ff0000;}
+.m-regist-phone .phone_code_box button.getCode{width: 135px;height: 38px;padding-right: 0px ;background:#fefefe url(../images/code_back.png) repeat-x 0px -1px;color: #4d4d4d;border:1px solid #e6e6e6;border-left: none;border-radius:0px 5px 5px 0px;vertical-align:top; }
+.m-regist-phone .phone_code_box button.getCode:hover{background:#fefefe url(../images/code_back.png) repeat-x 0px -38px}
+.m-regist-phone .phone_code_box button.disabled{cursor: default;background:#fefefe url(../images/code_back.png) repeat-x 0px -83px;color: #777}
+.m-regist-phone .phone_code_box button.disabled:hover{background:#fefefe url(../images/code_back.png) repeat-x 0px -83px}
+.m-regist .field .phone_code_box .iRight{background: #fff}
+.m-regist .field .phone_code_box .iWrong{background: #fff;}
+
+.g-loginMethod{width: 240px;height: 600px;background:#fff url(../images/slide_line.png) left top no-repeat;}
+.g-loginMethod .login_link{margin-top: 60px;margin-left: 30px} 
+.g-loginMethod .login_link .login_menber{line-height: 20px;font-size: 14px;}
+.g-loginMethod .login_link .login_menber a{color: #0082cb}  
+.g-loginMethod .login_link .login_menber a:hover{color:#f98945}  
+.g-loginMethod .login_link p{margin-top: 40px;font-size: 12px;line-height: 30px;}
+.g-loginMethod .login_link .login_entrance a{display: inline-block; width:80px;height: 22px;margin-right: 15px;background: url(../images/login_link.png) no-repeat;}
+.g-loginMethod .login_link .login_entrance .xl{background-position: 0px 0px;}
+.g-loginMethod .login_link .login_entrance .tx{background-position: -95px 0px;}
+
+
+/*重写弹出框头样式*/
+.ui_title{color: #666;font: 16px "微软雅黑";line-height: 40px;}

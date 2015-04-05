@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="style/css/global.css" rel="stylesheet" type="text/css">
+<link href="style/css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+  <div class="g-doc">
+  	<div class="g-hd">
+  		<div class="m-logo clearfix">
+  			<div class="logo-tag"><span class="logo_bg ct108"></span><a href="/" class="png_bg" ></a></div>
+  			<div class="logo-title "></div>
+            <div class="login-info">
+               <div class="info-detail">
+                 <label>欢迎您！</label><strong>昵称123</strong> <span>|</span> <a href="#" title="您是会员" class="user-status "></a><a href="#" title="站内信息" class="user-message"></a><span>|</span><a href="#" class="user-exit">退出</a>
+               </div>
+            </div>
+  		</div>
+  	</div>
+  	<div class="g-bd m-center clearfix" style="background-color:#f9f8f7">
+        <div class="m-menu fl">
+            <div class="menu">
+                <dl class="home">
+                    <dt><a href="index.html" class="on"><b></b>首页</a></dt>
+                </dl>
+                <dl class="information ">
+                    <dt><i></i>个人资料</dt>
+                    <dd><a href="baseInfo.html"><b></b>基本信息</a></dd>
+                    <dd><a href="legalize.html"><b></b>实名认证</a></dd>
+                    <dd><a href="bindPhone.html"><b></b>绑定手机</a></dd>
+                    <dd class="uline"><a href="bindEmail.html"><b></b>绑定邮箱</a></dd>
+                </dl>
+                <dl class="safe">
+                    <dt><i></i>安全中心</dt>
+                    <dd><a href="loginPassword.html"><b></b>修改登录密码</a></dd>
+                    <dd><a href="protectPassword.html"><b></b>修改保护密码</a></dd>
+                    <dd><a href="unBind.html"><b></b>解绑大厅</a></dd>
+            <!--         <dd><a href="loginRecord.html"><b></b>登录记录</a></dd>
+                    <dd><a href="sensitiveRecord.html"><b></b>敏感操作记录</a></dd> -->
+                </dl>
+
+            </div>
+        </div>
+        <div class="m-main fr">
+            <div id="base">
+                <div class="warm-tip" style="display:none">
+                    <div class="tip">
+                        <p>您的账号存在异常登录！        <a href="#">立即查看</a><i></i></p>
+                    </div>
+                </div>
+                <div class="info">
+                    <table>
+                        <tr><td class="col-1">账号：</td><td class="col-2"><span class="nc"> 昵称123456</span><a class="d-link update" href="">修改</a><span class="sj">152****3312</span><span class="yx">246568442@163.com</span></td></tr>
+                        <tr><td class="col-1">账号安全等级：</td>
+                            <td class="col-2">
+                                <div class="rating">
+                                    <div class="rate-line"></div>
+                                    <div class="rate-bg"></div>
+                                </div><div class="level">低</div> 
+                            </td>
+                        </tr>
+                        <tr><td class="col-1">上次登录：</td><td class="col-2">2013-12-08 12:30:28</td></tr>
+                        <tr><td class="col-1">上次登录地点：</td><td class="col-2">122.222.102.120(浙江省杭州市     电信)</td></tr>
+                    </table>                 
+                </div>
+                <div class="bind">
+                    <ul class="clearfix">
+                       <li class="b_phone">
+                         <div class="clearfix">
+                             <div class="img binded trans"></div>
+                             <div class="des">
+                                 <h5>绑定手机</h5>
+                                 <p class="unfinished"><span >未绑定</span></p>
+                                 <p>可重置登录密码、保护密码、解绑大厅</p>
+                             </div>
+                         </div>
+                        </li>
+                        <li class="b_email">
+                         <div class="clearfix ">
+                             <div class="img binded trans"></div>
+                             <div class="des">
+                                 <h5>绑定邮箱<label>(12****12qq.com)</label></h5>
+                                 <p class="finished"><span >已绑定</span><a href="#">开通邮箱登录</a></p>
+                                 <p >可重置登录密码、验证信息修改等。</p>
+                             </div>
+                         </div>
+                        </li>
+                        <li class="b_password">
+                         <div class="clearfix ">
+                             <div class="img binded trans"></div>
+                             <div class="des">
+                                 <h5>设置保护密码</h5>
+                                 <p class="unfinished"><span >未绑定</span></p>
+                                 <p>提高帐号安全，减少被盗财产损失</p>
+                             </div>
+                         </div>
+                        </li>
+                        <li class="b_hall">
+                         <div class="clearfix ">
+                             <div class="img binded trans"></div>
+                             <div class="des">
+                                 <h5>绑定同城游大厅</h5>
+                                 <p class="unfinished"><span >未绑定</span></p>
+                                 <p>帐号只能在绑定电脑上登录游戏大厅</p>
+                             </div>
+                         </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="acount-info">
+                    <h4>账号信息</h4>
+                    <table>
+                        <tr class="odd"><td class="col-1">登录密码</td><td class="col-2">建议您定期更换密码。上次修改密码时间：2013-12-23 12:12:12</td><td class="col-3"><a href="#">修改</a></td></tr>
+                        <tr><td class="col-1">登录记录</td><td class="col-2">查看最近一个月登录情况</td><td class="col-3"><a href="#">修改</a></td></tr>
+                        <tr class="odd"><td class="col-1">敏感操作</td><td class="col-2">修改密码，发生于2013-12-23 12:12:12，若存在异常，请核实后尽快修改</td><td class="col-3"><a href="#">修改</a></td></tr>
+                        <tr><td class="col-1">实名认证</td><td class="col-2">您登记的真实姓名：周*</td><td class="col-3"><a href="#">修改</a></td></tr>
+                        <tr class="odd"><td class="col-1">现居住地</td><td class="col-2">浙江  杭州  建德市</td><td class="col-3"><a href="#">修改</a></td></tr>
+                    </table>
+                    </table>
+                </div>
+            </div>
+        </div>
+  	</div>
+  	<div class="g-ft">
+  		<div class="foot clearfix">
+        <div class="product fl">畅唐科技旗下产品：</div> 
+        <ul class="clearfix fl">
+          <li><a href="#" class="tcy"></a></li>
+          <li><a href="#" class="sq108"></a></li>
+          <li><a href="#" class="sqw"></a></li>
+          <li><a href="#" class="yd"></a></li>
+          <li><a href="#" class="xy"></a></li>
+        </ul>
+        <div class="copyright fr"><em>©</em> 2013 杭州畅唐科技有限公司 版权所有</div>
+      </div>
+  	</div>
+  </div> 
+</body>
+</html>

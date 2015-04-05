@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册</title>
+<link href="style/css/global.css" rel="stylesheet" type="text/css">
+<link href="style/css/dialog.css" rel="stylesheet" type="text/css">
+<link href="style/css/regist.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/lhgdialog.min.js"></script>
+<script type="text/javascript" src="js/autoEmail.js"></script>
+<script type="text/javascript" src="js/jquery.enplaceholder.js"></script>
+<script type="text/javascript" src="js/regist.js"></script>
+<script type="text/javascript">
+// $(function(){
+//   setTimeout(function(){
+//      $.dialog.alert("msg",function(){});
+//   },1000)
+// })
+  
+</script>
+</head>
+<body>
+  <div class="g-doc">
+  	<div class="g-hd">
+  		<div class="m-logo clearfix">
+  			<div class="logo-tag"><span class="logo_bg"></span><a href="#" class="png_bg" ></a></div>
+  			<div class="logo-title "></div>
+  		</div>
+  	</div>
+  	<div class="g-bd clearfix">
+  		<div class="g-regist fl">
+  			<ul class="m-tag">
+  				<li class=" i_reg">个性账号注册</li><li class="p_reg">手机号码注册</li><li class="e_reg">邮箱账号注册</li>
+  			</ul>
+        <div class="regist-title">注册畅唐通行证</div>
+  			<div id="regist" class="m-regist">
+  				<div class="m-regist-identity m-reg-method" style="display:none">
+  					<form>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">用户名</div>
+  							<div class="ifo_input" >
+                    <input data-reg="userName" id="username" maxlength="16" type="text" placeholder="请输入用户名" name="username"  />             
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">登录密码</div>
+  							<div class="ifo_input ">
+  								<input data-reg="pwd" id="pwd" type="password" data-refer="username" maxlength="16"  placeholder="6-16位字母、数字" name="password"  />
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">确认密码</div>
+  							<div class="ifo_input">
+  								<input data-reg="pwdRepeat" data-refer="pwd" maxlength="16" id="pwdRepeat" type="password" name="repeatPassword"  />
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div>
+              <div class="field clearfix">
+                  <div class="ifo_lable">身份证号</div>
+                  <div class="ifo_input">
+                      <input data-reg="idCard" name="IDCard" maxlength="18" type="text" placeholder="请输入身份证号"  data-require="false" />
+                  </div>
+                  <div class="ifo ifoTip"></div>
+              </div>
+              <div class="field clearfix">
+                   <div class="ifo_lable">真实姓名</div>
+                   <div class="ifo_input">
+                       <input data-reg="trueName" name="TrueName" maxlength="8" type="text" placeholder="请填写真实姓名" data-require="false" />
+                   </div>
+                   <div class="ifo ifoTip"></div>
+              </div>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">性别</div>
+  							<div class="ifo_input radio_input">
+  							  <div class="sex_box">
+  								<a  name="male" class="sex sex_1 checked">男</a><a name="female" class="sex sex_2">女</a>
+                  <input type="hidden" name="sex" value="0" />
+  							  </div> 
+  							</div>
+  						</div>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">验证码</div>
+  							<div class="ifo_input code_input">
+  								 <input data-reg="pcCode"  id="code" type="text" maxlength="4" placeholder="验证码" name="code" /><img src="images/ico_code.png" />						
+  							</div>
+  							<div class="change_code">看不清？<a href="javascript:void(0)">换一张</a></div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>	
+  						</div>
+  						<div class="field btn_submit clearfix">
+  							<div class="ifo_lable"></div>
+  							<div class="ifo_input submit">
+  								<input id="submit" type="submit" value="同意协议并注册" title="同意协议并注册" />
+  							</div>
+  						</div>
+              <div class="field user_agree clearfix">
+                <div class="ifo_lable"></div>
+                <div class="ifo_input arree_input"><a class="protocol" href="#">《用户服务条款》</a></div>
+              </div>
+  					</form>
+  				</div>
+  				<div class="m-regist-phone m-reg-method" style="display:none">
+  					<form>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">手机号</div>
+  							<div class="ifo_input">
+                    <input data-reg="mobile" id="p_number" maxlength="11" type="text" placeholder="您的手机号"  />
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">验证码</div>
+  							<div class="ifo_input phone_code_box ">
+  								<input data-reg="mobileCode" id="p_code" maxlength="6" class="inputCode"  type="text" placeholder="短信验证码"  /><button type="button" class="getCode">点击获取验证码</button>
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">登录密码</div>
+  							<div class="ifo_input">
+  								<input data-reg="pwd"  id="pwd_2" type="password" data-refer="p_number" maxlength="16" placeholder="6-16位字母、数字"  />
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">确认密码</div>
+  							<div class="ifo_input">
+  								<input data-reg="pwdRepeat" data-refer="pwd_2" maxlength="16"  id="pwdRepeat_2" type="password"  />
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div>
+  						<!-- <div class="field clearfix">
+  							<div class="ifo_lable">用户名</div>
+  							<div class="ifo_input">
+  								<input data-reg="userName"  id="username_2" maxlength="16" type="text" placeholder="游戏中显示的名称"  />
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div> -->
+  						<div class="field clearfix">
+  							<div class="ifo_lable">性别</div>
+  							<div class="ifo_input radio_input">
+  							  <div class="sex_box">
+  								<a  name="male" class="sex sex_1 checked">男</a><i></i><a name="female" class="sex sex_2 unchecked">女</a>
+                  <input type="hidden" name="sex" value="0" />
+  							  </div>
+  							</div>
+  						</div>
+  						<div class="field btn_submit clearfix">
+  							<div class="ifo_lable"></div>
+  							<div class="ifo_input submit">
+  								<input id="submit2" type="submit" value="同意协议并注册" title="同意协议并注册" />
+  							</div>
+  						</div>
+              <div class="field user_agree clearfix">
+                <div class="ifo_lable"></div>
+                <div class="ifo_input arree_input"><a class="protocol" href="#">《用户服务条款》</a></div>
+              </div>
+  					</form>
+  				</div>
+  				<div class="m-regist-email m-reg-method" style="display:none">
+  					<form>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">注册邮箱</div>
+  							<div class="ifo_input">
+  								<input data-reg="email" id="e_address" type="text" autocomplete="off" placeholder="您常用的电子邮箱"  />
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">登录密码</div>
+  							<div class="ifo_input">
+  							     <input data-reg="pwd" id="pwd_3" type="password" data-refer="e_address" maxlength="16" placeholder="6-16位字母、数字"  />
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div>
+  						<div class="field clearfix">
+  							<div class="ifo_lable">确认密码</div>
+  							<div class="ifo_input">
+  								<input data-reg="pwdRepeat" data-refer="pwd_3" maxlength="16" id="pwdRepeat_3" type="password"  />
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div>
+  					 <!-- 	<div class="field clearfix">
+  							<div class="ifo_lable">用户名</div>
+  							<div class="ifo_input">
+  								<input data-reg="userName" id="username_3" type="text" placeholder="游戏中显示的名称"  />
+  							</div>
+  							<div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+  						</div> -->
+  						<div class="field clearfix">
+  							<div class="ifo_lable">性别</div>
+  							<div class="ifo_input radio_input">
+  							  <div class="sex_box">
+  								<a name="male" class="sex sex_1 checked">男</a><i></i><a name="female" class="sex sex_2 unchecked">女</a>
+                  <input type="hidden" name="sex" value="0" />
+  							  </div>
+  							</div>
+  						</div>
+  						
+  						<div class="field btn_submit clearfix">
+  							<div class="ifo_lable"></div>
+  							<div class="ifo_input submit">
+  								<input id="submit3" type="submit" value="同意协议并注册" title="同意协议并注册" />
+  							</div>
+  						</div>
+              <div class="field user_agree clearfix">
+                <div class="ifo_lable"></div>
+                <div class="ifo_input arree_input"><a class="protocol" href="#">《用户服务条款》</a></div>
+              </div>
+  					</form>
+  				</div>
+  			</div>
+  		</div>
+        <div class="g-loginMethod fr">
+        	<div class="login_link">
+        		<div class="login_menber">已有畅唐通行证（同城游帐号），请<a href="#">登录</a></div>
+        		<p>您还可以使用以下帐号登录： </p>
+        		<div class="login_entrance"><a class="xl" href="#"></a><a class="tx" href="#"></a></div>
+        	</div>
+        </div>
+  	</div>
+  	<div class="g-ft">
+      <div class="foot clearfix">
+        <div class="product fl">畅唐科技旗下产品：</div> 
+        <ul class="clearfix fl">
+          <li><a href="#" class="tcy"></a></li>
+          <li><a href="#" class="sq108"></a></li>
+          <li><a href="#" class="sqw"></a></li>
+          <li><a href="#" class="yd"></a></li>
+          <li><a href="#" class="xy"></a></li>
+        </ul>
+        <div class="copyright fr">© 2013 杭州畅唐科技有限公司 版权所有</div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

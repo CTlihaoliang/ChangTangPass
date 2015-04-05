@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>站内消息</title>
+<link href="style/css/global.css" rel="stylesheet" type="text/css">
+<link href="style/css/message.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+        .info a { text-decoration: underline; color: #0082cb; outline: 0 none; }
+        .info a:hover { text-decoration: underline; }
+        .action-state{padding-top:80px;}  
+        .action-state .a-s-con{ width:180px;}
+        .info p{text-indent: 2em;font: 14px '微软雅黑'}
+        .info .name{text-indent: 0px;}
+        .page a,.page span{font-size: 12px;color: #555;}
+        .page a:hover{text-decoration: underline;color: #f60 }
+</style>
+</head>
+<body>
+  <div id="message-con">  
+        <div class="info">
+          <p class="name">亲爱的 thing301</p>
+          <p>恭喜您于 2014-3-10 20:47:41 通过“充值会员附赠道具”活动，获得以下物品奖励：</p>
+          <p>负分清零 <strong>5</strong>件 </p>
+          <p>积分跃龙门 <strong>3</strong>件 </p>
+          <p>逃跑清零 <strong>5</strong>件 </p>　
+          <p><a href="http://shop.uc108.com/myitem/" target="_blank" style="color:blue;">点此查看物品</a></p>
+        </div>
+        <script type="text/javascript">
+                    var api = frameElement.api, W = api.opener;
+                    var view=W.$.dialog.list['StationMsgView'];
+                    if(!!view){
+                       var data={"title":"奖励通知：充值会员附赠道具"};
+                       if(!!data){
+                           view.title(data.title);
+                       }else
+                       {
+                            view.title("无标题");
+                       }
+                    }
+                    try{
+                        if (typeof (window.parent.setMsgItemStyle) !== "undefined") {
+                            window.parent.setMsgItemStyle(4377426);
+                        }
+                    }
+                  catch(e){}
+        </script>  
+        <div class="page"> 
+            <span class="fl">1/8</span>     
+            <div class="fr">
+                <a href="javascript:void(0);" onclick="seeMsgView(4344271);return false;"> 下一条 &gt;</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function seeMsgView(id) {
+                try {
+                    if (typeof (window.parent.seeMsgViewById) !== "undefined") {
+                        window.parent.seeMsgViewById(id);
+                    }
+                }
+                catch (e) { }
+            }
+        </script>  
+    </div>  
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录</title>
+<link href="style/css/global.css" rel="stylesheet" type="text/css">
+<link href="style/css/dialoglogin.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+         <div class="m-login">
+            <div class="error hidden"></div>
+            <form id="formlogin">
+              <div class="field L_UserName">
+                <input data-reg="userName" type="text" name="username" tabIndex="1" id="username" placeholder="用户名/手机号/邮箱" /> <i></i>
+              </div>  
+              <div class="password_tip"><a href="#">忘记登录密码？</a></div>
+              <div class="field L_PassWord">
+                <input data-reg="pwd" type="password" name="password" id="pwd" tabIndex="2" placeholder="登录密码"  />
+              </div>
+              <div class="field L_Code">
+                <input data-reg="pcCode" type="text" name="code" id="code" tabIndex="3" placeholder="验证码"  /><img src="images/ico_code.png" /><label>看不清？<a href="#">换一张</a></label>
+              </div>
+              <div class="submit">
+                 <input type="submit" id="loginsubmit" tabIndex="4" value="登  录" />
+              </div>
+            </form>
+             <ul class="entries">  
+               <li class="other-login" >
+                 <a href="" class="tx_login" title="QQ登录">QQ登录</a><span>|</span><a href="" class="wb_login" title="微博登录">微博登录</a>
+               </li>
+               <li class="register"><a href="" target="_blank">免费注册</a></li>
+             </ul>
+         </div>
+</body>
+</html>

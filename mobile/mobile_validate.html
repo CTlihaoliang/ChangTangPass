@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>手机端验证</title>
+<link rel="stylesheet" type="text/css" href="./style/css/mobile_validate.css">
+<script type="text/javascript" src="./scripts/zepto.min.js"></script>
+<script type="text/javascript" src="./scripts/mobile_validate.js"></script>
+</head>
+<body>
+<div class="g-doc">
+ <div class="m-validate"  >
+	<p class="ms_info">账号<strong>M020</strong>绑定了电脑，请通过手机短信验 证后再登录游戏： </p>
+	<p class="ms_num"><label>手机号：</label><span>13750811869</span></p>
+	<div class="ms_fun"><div class="getCode d-radius">获取短信验证码</div></div>
+	<p class="ms_verify"><label>验证码：</label></p>
+	<form id="Vform"  action="">
+	 <div class="mi_verify">
+	    <input type="hidden" name="mobile" value="13750811869" />
+	    <input type="text" class="d-radius d-shadow" name="verify" maxlength="6"  id="verify" />
+	 </div>
+	 <div class="ms_button">
+	    <button type="submit" class="d-radius">立即验证</button>
+	</div>
+	</form>
+ </div> 
+ <div class="m-validate" style="display:none" >
+ 	<div class="wrap-tip">
+ 		<div class="tip success"></div>
+ 	</div>
+ 	<p>账号M020绑定了电脑，请绑定手机或解绑 电脑后再来登陆！</p>
+ 	<p>绑定手机网址：<a href="http://user.uc108.com">http://user.uc108.com</a></p>
+ </div>
+ <div class="m-validate" style="display:none">
+ 	<div class="wrap-tip">
+ 		<div class="tip success"></div>
+ 	</div>
+ 	<p class="verify_success">短信验证成功，请返回重新登录游戏！</p>
+ </div>
+</div>
+</body>

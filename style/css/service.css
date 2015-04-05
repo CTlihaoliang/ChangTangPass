@@ -1,0 +1,7 @@
+.g-bd{background-color: #fff;min-height:450px; height:auto !important; height:450px; overflow:visible;}
+.service{padding: 20px 50px;font-size: 13px;color: #555}
+.service h2{line-height: 60px;font-size: 20px;text-align: center;font-family: "黑体";color: 333}
+.service h3{text-indent: 2em;line-height: 24px;font-weight: bold;}
+.service p{text-indent: 2em;line-height: 24px;}
+.service strong{color: #333}
+.service p .fontline{text-decoration: underline;}

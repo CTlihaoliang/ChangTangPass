@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>绑定邮箱</title>
+<link href="style/css/global.css" rel="stylesheet" type="text/css">
+<link href="style/css/bindEmail.css" rel="stylesheet" type="text/css">
+<link href="style/css/dialog.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/lhgdialog.min.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/view.js"></script>
+<script type="text/javascript" src="js/autoEmail.js"></script>
+</head>
+<body>
+  <div class="g-doc">
+  	<div class="g-hd">
+  		<div class="m-logo clearfix">
+  			<div class="logo-tag"><span class="logo_bg"></span><a href="#" class="png_bg" ></a></div>
+  			<div class="logo-title "></div>
+  		</div>
+  	</div>
+  	<div class="g-bd m-center clearfix" style="background-color:#f9f8f7">
+        <div class="m-menu fl">
+            <div class="menu">
+                <dl class="home">
+                    <dt><a href="index.html" ><b></b>首页</a></dt>
+                </dl>
+                <dl class="information ">
+                    <dt><i></i>个人资料</dt>
+                    <dd ><a href="baseInfo.html" ><b></b>基本信息</a></dd>
+                    <dd><a href="legalize.html" ><b></b>实名认证</a></dd>
+                    <dd><a href="bindPhone.html"><b></b>绑定手机</a></dd>
+                    <dd><a href="bindEmail.html" class="on"><b></b>绑定邮箱</a></dd>
+                </dl>
+                <dl class="safe">
+                    <dt><i></i>安全中心</dt>
+                    <dd> <a href="loginPassword.html"><b></b>修改登录密码</a></dd>
+                    <dd><a href="protectPassword.html"><b></b>修改保护密码</a></dd>
+                    <dd><a href="unBind.html"><b></b>解绑大厅</a></dd>
+<!--                     <dd><a href="loginRecord.html"><b></b>登录记录</a></dd>
+                    <dd><a href="sensitiveRecord.html"><b></b>敏感操作记录</a></dd> -->
+                </dl> 
+            </div>
+        </div>
+        <div class="m-main fr">
+            <div id="Email">
+               <div class="m-title">
+                 <h4>
+                   <strong>绑定邮箱</strong>
+                   <span class="tip">请勿绑定陌生人或官方客服邮箱，以免账号被盗</span>
+                   </h4>
+                 <p>帐号绑定邮箱后，即可以使用邮箱进行密码重置，接收通知等。</p>
+               </div>
+               <div class="m-finish" style="display:none">
+                 <table>
+                   <tr class="status"><td class="th1">绑定邮箱：</td><td class="th2"><span class="fc-a">laoshen******126.com</span></td></tr>
+                   <tr class="status"><td class="th1"></td><td class="th2"><a href="#">更改邮箱帐号</a></td></tr>
+                 </table>
+               </div>
+               <div class="validate m-validate">
+                    <form id="VForm">
+                       <div class="field clearfix">
+                            <div class="ifo_lable">验证方式</div>
+                            <div class="ifo_input vMethod ">
+                               <select>
+                                   <option value="0">实名认证</option>
+                                   <option value="1">绑定手机152****1693</option>
+                                   <option value="3">保护密码</option>
+                                   <option value="4">登录密码</option>
+                               </select>
+                            </div>
+                            <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="m-view">
+                        <div class="field clearfix">
+                             <div class="ifo_lable">身份证号：</div>
+                             <div class="ifo_input"><input data-reg="idCard" id="card" name="IDCard" type="text" placeholder="请输入身份证号"   />
+                             </div>
+                             <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="field clearfix">
+                           <div class="ifo_lable">真实姓名：</div>
+                           <div class="ifo_input"><input data-reg="trueName" id="name" name="TrueName" type="text" placeholder="请填写真实姓名"  />
+                           </div>
+                           <div class="ifo ifoTip"></div>
+                        </div>
+                        </div>
+                        <div class="field clearfix">
+                             <div class="ifo_lable">绑定邮箱：</div>
+                             <div class="ifo_input"><input data-reg='email' name='email' id='email' type="text" data-required="true" />
+                             </div>
+                             <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="field btn_submit clearfix">
+                            <div class="ifo_lable"></div>
+                            <div class="ifo_input submit">
+                                <input id="submit" type="submit" value="保存" title="保存" />
+                            </div>
+                        </div>
+                   </form>
+               </div>
+               
+            </div>
+        </div>
+  	</div>
+   <!--  <div class="m-dialog">
+      <div class="wrap-dialog">
+          <div class="inside success">
+             <i></i>
+             <h4>发送成功，请注意查收</h4>
+             <p><a href="#">进入邮箱</a></p>
+             <input type="button" value="确定" />
+          </div>
+      </div>
+    </div> -->
+  	<div class="g-ft">
+      <div class="foot clearfix">
+        <div class="product fl">畅唐科技旗下产品：</div> 
+        <ul class="clearfix fl">
+          <li><a href="#" class="tcy"></a></li>
+          <li><a href="#" class="sq108"></a></li>
+          <li><a href="#" class="sqw"></a></li>
+          <li><a href="#" class="yd"></a></li>
+          <li><a href="#" class="xy"></a></li>
+        </ul>
+        <div class="copyright fr">© 2013 杭州畅唐科技有限公司 版权所有</div>
+      </div>
+    </div>
+  </div>
+  <script language="javascript">
+     $(function () {
+            $('form').each(function () {
+                $(this).regsubmit(formValidate);
+            });
+        (function fixNavStyle(){
+          var ele = $(".information dd:last");
+          if(ele.find('a').hasClass('on')){
+            ele.find('a').css({"border-bottom":"0px none"})
+          }
+        })()   
+ })
+</script>
+</body>
+</html>

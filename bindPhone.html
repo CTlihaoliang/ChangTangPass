@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>绑定手机</title>
+<link href="style/css/global.css" rel="stylesheet" type="text/css">
+<link href="style/css/dialog.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/lhgdialog.min.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/view.js"></script>
+<script type="text/javascript" src="js/cookie.js"></script>
+</head>
+<body>
+  <div class="m-dangle" >
+    <div id="dangle" class="item">
+      <a class="gift"  href="#"></a>
+      <a href="javascript:void(0)" class="close"></a>
+    </div>
+  </div>
+  <div class="g-doc">
+  	<div class="g-hd">
+  		<div class="m-logo clearfix">
+  			<div class="logo-tag"><span class="logo_bg"></span><a href="#" class="png_bg" ></a></div>
+  			<div class="logo-title "></div>
+  		</div>
+  	</div>
+  	<div class="g-bd m-center clearfix" style="background-color:#f9f8f7">
+        <div class="m-menu fl">
+            <div class="menu">
+                <dl class="home">
+                    <dt><a href="index.html" ><b></b>首页</a></dt>
+                </dl>
+                <dl class="information ">
+                    <dt><i></i>个人资料</dt>
+                    <dd><a href="baseInfo.html" ><b></b>基本信息</a></dd>
+                    <dd><a href="legalize.html" ><b></b>实名认证</a></dd>
+                    <dd><s class="award" title="绑定手机，立奖银子5000两"></s><a href="bindPhone.html" class="on"><b></b>绑定手机</a></dd>
+                    <dd><a href="bindEmail.html"><b></b>绑定邮箱</a></dd>
+                </dl>
+                <dl class="safe">
+                    <dt><i></i>安全中心</dt>
+                    <dd><a href="loginPassword.html"><b></b>修改登录密码</a></dd>
+                    <dd><a href="protectPassword.html"><b></b>修改保护密码</a></dd>
+                    <dd><a href="unBind.html"><b></b>解绑大厅</a></dd>
+                <!--     <dd><a href="loginRecord.html"><b></b>登录记录</a></dd>
+                    <dd><a href="sensitiveRecord.html"><b></b>敏感操作记录</a></dd> -->
+                </dl>
+            </div>
+        </div>
+        <div class="m-main fr">
+            <div id="Phone">
+               <div class="m-title">
+                  <h4><strong>绑定手机</strong></h4>
+                  <p>帐号绑定手机后，即使可以用手机进行密码重置、解绑大厅等多操个安全操作。</p>
+               </div>
+               <div class="m-finish" style="display:none">
+                 <table>
+                   <tr class="status"><td class="th1">绑定手机：</td><td class="th2"><span class="fc-a">152******12</span><i class="sta2">( 已绑定 )</i></td></tr>
+                   <tr class="status status_modify"><td class="th1"></td><td class="th2"><a href="#">更改手机号</a><span>|</span><a href="#">开通手机登录</a></td></tr>
+                 </table>
+               </div>
+               <div class="validate m-validate">
+                    <form id="VForm">
+                       <div class="field clearfix">
+                            <div class="ifo_lable">验证方式：</div>
+                            <div class="ifo_input vMethod">
+                               <select>
+                                   <option value="0">实名认证</option>
+                                   <option value="2">绑定邮箱lihao***@163.com</option>
+                                   <option value="3">保护密码</option>
+                                   <option value="4">登录密码</option>
+                               </select>
+                            </div>
+                            <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="m-view">
+                          <div class="field clearfix">
+                             <div class="ifo_lable">身份证号：</div>
+                             <div class="ifo_input"><input data-reg="idCard" id="card" name="IDCard" type="text" placeholder="请输入身份证号"   /><i></i>
+                             </div>
+                             <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="field clearfix">
+                           <div class="ifo_lable">真实姓名：</div>
+                           <div class="ifo_input"><input data-reg="trueName" id="name" name="TrueName" type="text" placeholder="请填写真实姓名" /><i></i>
+                           </div>
+                           <div class="ifo ifoTip"></div>
+                        </div>
+                        </div>
+                        <div class="field clearfix">
+                             <div class="ifo_lable">绑定手机号：</div>
+                             <div class="ifo_input"><input data-reg='mobile' name='phone' id='phone'  type="text"  />
+                             </div>
+                             <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="field clearfix">
+                            <div class="ifo_lable">验证码：</div>
+                            <div class="ifo_input phone_code_box ">
+                                <input data-reg='mobileCode' id='code' class="inputCode"  type="text" placeholder="验证码"  /><button type="button" verifyType="" class="getCode phoneCode"><span>23</span>点击获取手机验证码</button>
+                            </div>
+                            <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="field btn_submit clearfix">
+                            <div class="ifo_lable"></div>
+                            <div class="ifo_input submit">
+                                <input id="submit" type="submit" value="保存" title="保存" />
+                            </div>
+                        </div>
+                   </form>
+               </div>
+               
+            </div>
+        </div>
+  	</div>
+  	<div class="g-ft">
+      <div class="foot clearfix">
+        <div class="product fl">畅唐科技旗下产品：</div> 
+        <ul class="clearfix fl">
+          <li><a href="#" class="tcy"></a></li>
+          <li><a href="#" class="sq108"></a></li>
+          <li><a href="#" class="sqw"></a></li>
+          <li><a href="#" class="yd"></a></li>
+          <li><a href="#" class="xy"></a></li>
+        </ul>
+        <div class="copyright fr">© 2013 杭州畅唐科技有限公司 版权所有</div>
+      </div>
+    </div>
+  </div>
+  <script language="javascript">
+    $(function () {
+            $('form').each(function () {
+                $(this).regsubmit(formValidate);
+            });
+
+          ;(function(){
+            var cook = GetCookie("ad");
+            if(cook == "award"){
+              return;
+            } else {
+               $("#dangle").show();
+               fall({ele:"dangle",hp:0.04,vp:0.6,sp:30,callback:function(){
+                 SetCookie("ad","award",1)
+                 $("#dangle").hide(); 
+                }
+              })
+           }     
+          })()
+              
+  })
+</script>
+</body>
+</html>

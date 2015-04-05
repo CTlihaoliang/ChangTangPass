@@ -1,0 +1,8 @@
+
+
+.base-info .field select{height: 36px;line-height: 26px;width: 250px;border-radius: 5px;border:1px solid #e6e6e6;color: #4d4d4d;padding: 7px 2px}
+.base-info .field select.special{width: 78px;}
+.base-info .field .ifo_lable{width: 130px;}
+.base-info .field .ifo_input{width: 250px;}
+.base-info .field .ifo_input input{width: 215px}
+.base-info .field .submit input{width: 120px;text-align: center;}

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>实名认证</title>
+<link href="style/css/global.css" rel="stylesheet" type="text/css">
+<link href="style/css/legalize.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="style/css/dialog.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/lhgdialog.min.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/view.js"></script>
+  <style> 
+
+</style> 
+</head>
+<body>
+  <div class="g-doc">
+  	<div class="g-hd">
+  		<div class="m-logo clearfix">
+  			<div class="logo-tag"><span class="logo_bg"></span><a href="#" class="png_bg" ></a></div>
+  			<div class="logo-title "></div>
+  		</div>
+  	</div>
+  	<div class="g-bd m-center clearfix" style="background-color:#f9f8f7">
+        <div class="m-menu fl">
+            <div class="menu">
+                <dl class="home">
+                    <dt><a href="index.html" ><b></b>首页</a></dt>
+                </dl>
+                <dl class="information ">
+                    <dt><i></i>个人资料</dt>
+                    <dd ><a href="baseInfo.html" ><b></b>基本信息</a></dd>
+                    <dd><a href="legalize.html" class="on"><b></b>实名认证</a></dd>
+                    <dd><a href="bindPhone.html"><b></b>绑定手机</a></dd>
+                    <dd><a href="bindEmail.html"><b></b>绑定邮箱</a></dd>
+                </dl>
+                <dl class="safe">
+                    <dt><i></i>安全中心</dt>
+                    <dd><a href="loginPassword.html"><b></b>修改登录密码</a></dd>
+                    <dd><a href="protectPassword.html"><b></b>修改保护密码</a></dd>
+                    <dd><a href="unBind.html"><b></b>解绑大厅</a></dd>
+           <!--          <dd><a href="loginRecord.html"><b></b>登录记录</a></dd>
+                    <dd><a href="sensitiveRecord.html"><b></b>敏感操作记录</a></dd> -->
+                </dl>
+
+            </div>
+        </div>
+        <div class="m-main fr">
+            <div id="real-name">
+               <div class="m-title">
+                <h4><strong>实名认证</strong></h4>
+                <p>根据国家2010年8月1日正式实施的《网络游戏管理暂行办法》中规定，网络游戏用户需使用有效的身份证信息进行实名注册。为保证您能流畅的体验各款游戏，请尽快完善。</p>     
+                </div>  
+               <div class="m-finish" style="">
+                 <table>
+                   <tr><td class="th1">姓名：</td><td class="th2"><strong>称*谓</strong></td></tr>
+                   <tr><td class="th1">身份证号码：</td><td class="th2"><strong>3301*******************022 </strong></td></tr>
+                   <tr class="status">
+                    <td class="th1">认证状态：</td>
+                    <td class="th2"> 
+                      <div class="wrap_card">
+                       <span class="undo">未上传身份证图片</span>
+                       <span class="example">(身份证图片示例)</span>
+                       <img class="exampleImg" src="style/images/exampleCard.png">
+                       <div class="upload">
+                         <a href="javascript:void(0)">立即上传</a>
+                         <from id="submit_form"  method="post"  action="" enctype="multipart/form-data" target="formTarget">
+                         <input type="file" id="load-input" name="myfile" />
+                         <input id="idCard" type="hidden" name="card" value="" />
+                         </from>
+                       </div>
+                      </div>
+                    </td>
+                  </tr>
+                 </table>
+               </div>
+<!--                <div class="validate m-validate">
+                    <form id="VForm">
+                       <div class="field clearfix">
+                            <div class="ifo_lable">验证方式：</div>
+                            <div class="ifo_input vMethod">
+                               <select>
+                                   <option value="1">绑定手机152****1693</option>
+                                   <option value="2">绑定邮箱lihao***@163.com</option>
+                                   <option value="3">保护密码</option>
+                                   <option value="4">登录密码</option>
+                               </select>
+                            </div>
+                            <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="m-view">
+                         <div class="field clearfix">
+                            <div class="ifo_lable">验证码：</div>
+                            <div class="ifo_input phone_code_box ">
+                                <input data-reg="mobileCode" id="code" class="inputCode"  type="text" placeholder="验证码"  /><button type="button" verifyType="" class="getCode">点击获取手机验证码</button>
+                            </div>
+                            <div class="ifo ifoTip"></div>
+                         </div>
+                        </div>
+                        <div class="field clearfix">
+                             <div class="ifo_lable">身份证号：</div>
+                             <div class="ifo_input"><input data-reg="idCard" id="card" name="IDCard" type="text" placeholder="请输入身份证号"  />
+                             </div>
+                             <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="field clearfix">
+                           <div class="ifo_lable">真实姓名：</div>
+                           <div class="ifo_input"><input data-reg="trueName" id="name" name="TrueName" type="text" placeholder="请填写真实姓名" />
+                           </div>
+                           <div class="ifo ifoTip"></div>
+                        </div>
+                        <div class="field btn_submit clearfix">
+                            <div class="ifo_lable"></div>
+                            <div class="ifo_input submit">
+                                <input id="submit" type="submit" value="保存" title="保存" />
+                            </div>
+                        </div>
+                   </form>
+               </div> -->
+               
+            </div>
+        </div>
+  	</div>
+  	<div class="g-ft">
+      <div class="foot clearfix">
+        <div class="product fl">畅唐科技旗下产品：</div> 
+        <ul class="clearfix fl">
+          <li><a href="#" class="tcy"></a></li>
+          <li><a href="#" class="sq108"></a></li>
+          <li><a href="#" class="sqw"></a></li>
+          <li><a href="#" class="yd"></a></li>
+          <li><a href="#" class="xy"></a></li>
+        </ul>
+        <div class="copyright fr">© 2013 杭州畅唐科技有限公司 版权所有</div>
+      </div>
+    </div>
+  </div>
+ <!--  <iframe id="formTarget" src=""></iframe> -->
+<script language="javascript">
+        $(function () {
+             $(".example").bind("click",function(){
+              $.dialog({
+                title:"身份证图片示例",
+                content:"<img  src='../images/IDcard.jpg'/>",
+                //drag: false,
+                lock: true
+              })
+             });
+             $("#load-input").bind("change", function () {
+                $("#idCard").val($(this).val());
+                if ($("#idCard").val() != '') {
+                  $.dialog.tips('正在上传身份证图片...', 600, 'loading.gif');
+                    $("#submit_form").submit();
+                }
+            });
+            $('form').each(function () {
+                $(this).regsubmit(formValidate);
+            });
+        });
+</script>
+</body>
+</html>

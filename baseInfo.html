@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>基本信息</title>
+<link href="style/css/global.css" rel="stylesheet" type="text/css">
+<link href="style/css/baseInfo.css" rel="stylesheet" type="text/css">
+<link href="style/css/select.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/view.js"></script>
+<script type="text/javascript" src="js/baseInfo.js"></script>
+</head>
+<body>
+  <div class="g-doc">
+  	<div class="g-hd">
+  		<div class="m-logo clearfix">
+  			<div class="logo-tag"><span class="logo_bg"></span><a href="#" class="png_bg" ></a></div>
+  			<div class="logo-title "></div>
+  		</div>
+  	</div>
+  	<div class="g-bd m-center clearfix" style="background-color:#f9f8f7">
+        <div class="m-menu fl">
+            <div class="menu">
+                <dl class="home">
+                    <dt><a href="index.html" ><b></b>首页</a></dt>
+                </dl>
+                <dl class="information ">
+                    <dt><i></i>个人资料</dt>
+                    <dd><a href="baseInfo.html" class="on"><b></b>基本信息</a></dd>
+                    <dd><a href="legalize.html" ><b></b>实名认证</a></dd>
+                    <dd><a href="bindPhone.html"><b></b>绑定手机</a></dd>
+                    <dd><a href="bindEmail.html"><b></b>绑定邮箱</a></dd>
+                </dl>
+                <dl class="safe">
+                    <dt><i></i>安全中心</dt>
+                    <dd><a href="loginPassword.html"><b></b>修改登录密码</a></dd>
+                    <dd><a href="protectPassword.html"><b></b>修改保护密码</a></dd>
+                    <dd><a href="unBind.html"><b></b>解绑大厅</a></dd>
+           <!--          <dd><a href="loginRecord.html"><b></b>登录记录</a></dd>
+                    <dd><a href="sensitiveRecord.html"><b></b>敏感操作记录</a></dd> -->
+                </dl>
+            </div>
+        </div>
+        <div class="m-main fr">
+            <div class="base-info">
+               <div class="m-title">
+                 <h4><strong>基本信息</strong></h4>
+               </div>
+               <div class="m-operate-result" style="">
+                 <div class="r_detail success">
+                   <div class="r_title">操作成功！</div>
+                   <p class="r_content">您的信息已经提交成功，请继续进行其他操作。</p>
+                   <div class="r_btn">
+                     <a href="#" class="refer">返回首页</a>
+                   </div>
+                 </div>
+               </div>
+               <div class="validate m-validate">                   
+               <form id="BForm">
+                  <div class="field clearfix">
+                    <div class="ifo_lable">游戏昵称：</div>
+                      <div class="ifo_input">
+                        <input data-reg="nick" id="nick" type="text" data-require="false" placeholder="请输入游戏昵称" name="nick"  />
+                      </div>
+                      <div class="ifo ifoTip"></div>
+                  </div>
+                  <div class="field clearfix">
+                    <div class="ifo_lable">性别：</div>
+                    <div class="ifo_input radio_input">
+                       <div class="sex_box">
+                          <a  name="male" class="sex sex_1 ">男</a><a name="female" class="sex sex_2 checked">女</a>
+                          <input type="hidden" name="sex" value="0" />
+                       </div> 
+                     </div>
+                  </div><div class="field clearfix">
+                     <div class="ifo_lable">生日：</div>
+                     <div class="ifo_input" id="birthday">
+                        <select id="year" class="special"></select>
+                        <select id="month" class="special"></select>
+                        <select id="day" class="special"></select>
+                     </div>
+                     <div class="ifo ifoTip"></div>  
+                  </div>
+                  <div class="field clearfix">
+                     <div class="ifo_lable">现居地：</div>
+                     <div class="ifo_input" id="nowAddress">
+                        <select id="provice1" class="special"><option value="0">请选择</option></select>
+                        <select id="city1" class="special"></select>
+                        <select id="area1" class="special"></select>
+                     </div>
+                     <div class="ifo ifoTip"></div>  
+                  </div>
+                 <!--  <div class="field clearfix">
+                     <div class="ifo_lable" >家乡：</div>
+                     <div class="ifo_input" id="evenAddress">
+                        <select id="provice2" class="special"></select>
+                        <select id="city2" class="special"></select>
+                        <select id="area2" class="special"></select>
+                     </div>
+                     <div class="ifo ifoTip"></div>  
+                  </div> -->
+                   <div class="field clearfix">
+                    <div class="ifo_lable">详细地址：</div>
+                      <div class="ifo_input">
+                        <input data-reg="detailAdrress"  type="text" data-require="false" placeholder="请输入详细地址" name="detailAdrress"  />
+                      </div>
+                      <div class="ifo ifoTip">详细地址不包含省、市、区</div>
+                  </div> 
+                  <div class="field clearfix">
+                    <div class="ifo_lable">QQ号码：</div>
+                      <div class="ifo_input">
+                        <input data-reg="qq" id="qq" type="text" data-require="false" placeholder="请输入QQ号码" name="nick"  />
+                      </div>
+                      <div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>
+                  </div>                                  
+                  <!-- <div class="field clearfix">
+                     <div class="ifo_lable">学历：</div>
+                     <div class="ifo_input">
+                         <select>
+                          <option value="-1">请选择</option>
+                          <option value="dz">大专</option>
+                          <option value="bk">本科</option>
+                          <option value="ss">硕士</option>
+                         </select>
+                     </div>
+                     <div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>  
+                  </div>
+                  <div class="field clearfix">
+                     <div class="ifo_lable">所在行业：</div>
+                     <div class="ifo_input">
+                          <select>
+                           <option value="-1">请选择</option>
+                           <option value="it">IT</option>
+                           <option value="GY">工业</option>
+                           <option value="NY">农业</option>
+                          </select>
+                     </div>
+                     <div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>  
+                  </div>
+                  <div class="field clearfix">
+                     <div class="ifo_lable">年收入：</div>
+                     <div class="ifo_input">
+                          <select>
+                           <option value="-1">请选择</option>
+                           <option value="5w">50万以上</option>
+                           <option value="20w">20万以上</option>
+                           <option value="20wb">20万以下</option>
+                          </select>
+                     </div>
+                     <div class="ifo ifoTip">由4-16位字符组成，中文算2个字符</div>  
+                  </div> -->
+                  <div class="field btn_submit clearfix">
+                     <div class="ifo_lable"></div>
+                     <div class="ifo_input submit">
+                      <input id="submit" type="submit" value="保存" title="保存" />
+                     </div>
+                  </div>
+               </form>
+              </div>  
+            </div>
+        </div>
+  	</div>
+  	<div class="g-ft">
+      <div class="foot clearfix">
+        <div class="product fl">畅唐科技旗下产品：</div> 
+        <ul class="clearfix fl">
+          <li><a href="#" class="tcy"></a></li>
+          <li><a href="#" class="sq108"></a></li>
+          <li><a href="#" class="sqw"></a></li>
+          <li><a href="#" class="yd"></a></li>
+          <li><a href="#" class="xy"></a></li>
+        </ul>
+        <div class="copyright fr">© 2013 杭州畅唐科技有限公司 版权所有</div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    // function initNavStyle(){
+    //  var el1 = $(".information dd:eq(0)");
+    //  var el2 = $(".information dd:last");
+    //  var el3 = $(".safe dd:eq(0)");
+    //  if(el1.find("a").hasClass('on')){
+    //    el1.removeClass('bline');
+    //  } else {
+    //    el1.addClass('bline');
+    //  };
+    //  if(el2.find("a").hasClass('on')){
+    //     el2.removeClass('uline');
+    //  } else {
+    //     el2.addClass('uline');
+    //  };
+    //  if(el3.find('a').hasClass('on')){
+    //     el3.removeClass('bline');
+    //  } else {
+    //     el3.addClass('bline');
+    //  }
+    // }
+    // initNavStyle()
+  </script>
+</body>
+</html>

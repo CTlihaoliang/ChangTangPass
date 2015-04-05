@@ -1,0 +1,28 @@
+
+.g-bd{background-color: #fff;font-size: 14px;color: #555;min-height:450px; height:auto !important; height:450px; overflow:visible;border:1px solid #e3e3e3;border-top:none;}
+
+.regist-tip {padding: 140px 160px 30px 230px;}
+.regist-tip .tip{position: relative;padding-left: 90px;}
+.regist-tip .tip .func .repeatSend{color: #0082cb;font-size: 12px;}
+.regist-tip .tip .func .repeatSend:hover{text-decoration: underline;}
+.regist-tip .goEmail{width: 120px;background:url(../images/email_btn.png) no-repeat;background-position: 0px 0px;}
+.regist-tip .goEmail:hover{background:url(../images/email_btn.png) no-repeat;background-position: 0px -30px;}
+.regist-tip .tip h4{font: 600 16px/24px "microsoft yahei";color: #555;}
+.regist-tip .tip p{font-size: 12px;font-family: "宋体";color: #555;line-height: 20px}
+.regist-tip i{position: absolute;top:0px;left: 0px;display: inline-block;height: 80px;width: 80px;_left:-90px;background:url(../images/email_success.png) no-repeat;}
+.regist-tip .tip .func{height: 30px;line-height: 30px;margin-top: 25px;}
+.regist-tip .tip .func a{display: inline-block;margin-right: 15px;height: 30px;line-height: 30px;text-align: center;color: #fff}
+.regist-tip .func span{padding: 0px 10px;color: #888;font-size: 12px;}
+
+.m-tip{padding: 140px 60px 30px 60px}
+.m-tip .wraper{}
+.m-tip .tip{position: relative;padding-left: 90px;width:450px;margin: 0px auto; }
+.m-tip .tip i{position: absolute;top:0px;left: 0px;display: inline-block;height: 80px;width: 80px;}
+.m-tip .tip h4{font: 600 16px/24px "microsoft yahei";color: #555;}
+.m-tip .tip p{font-size: 13px;font-family: "microsoft yahei";color: #888;line-height: 24px;margin-top: 5px;}
+.m-tip .tip p strong,.m-tip .tip h4 strong{padding: 0px 2px;color: #ff0000;font-weight: normal;font-family: "Arial";}
+.m-tip .tip .func{height: 30px;line-height: 30px;margin-top: 25px}
+.m-tip .tip .func a{display: inline-block;margin-right: 15px;height: 30px;line-height: 30px;text-align: center}
+.m-tip .func span{padding: 0px 10px;color: #888;font-size: 12px;}
+.m-tip .success i{background:url(../images/ico_big_succes.png) no-repeat;background-position: 0px 0px;}
+.m-tip .fail i{top:-10px;background:url(../images/ico_big_tip.png) no-repeat;background-position: 0px 0px;}

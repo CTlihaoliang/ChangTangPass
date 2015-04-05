@@ -1,0 +1,4 @@
+.undo{float: left;vertical-align: middle;font-size: 12px;}
+.upload{float: left;position: relative;display: inline-block;height: 16px;width: 100px;margin-left: 30px;}
+.upload a{display: block;vertical-align: middle;}
+#load-input{ position:absolute;top:0px;left:0px;height:100%;cursor:pointer; opacity:0;width: 60px;background-color:#e3e3e3;filter:alpha(opacity:0);z-index:999;font-size:12px;_font-size:10px;_left:-10px;} 

@@ -1,0 +1,68 @@
+
+.message .m-til { height: 34px; padding-left: 20px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #d9d9d9; }
+.message .m-til span { display: inline-block; float: left; height: 32px; width: 92px; border: 1px solid #d9d9d9; margin-right: 10px; background-color: #f5f5f5; line-height: 32px; text-align: center; font-size: 14px; margin-top: 1px; margin-bottom: -1px; position:relative; cursor:pointer; }
+.message .m-til span.on{ background-color: #FFF; border-bottom-color:#FFF; font-weight:bold; cursor:default;}
+.message { padding-top: 30px; }
+.message .m-list li { border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #CCC; line-height: 20px; padding:15px 10px;overflow: hidden; zoom:1}
+.message .m-list li .m-li-td,.message .m-list li .m-li-td2 { display: inline-block;  float: left; }
+.message .m-list li .m-li-td{padding-right:10px;}
+.message .m-list li .m-li-td input { margin-top:5px;*margin-top:0; }
+.message .m-list li .m-list-date { color: #949494; float: right; white-space: nowrap; font: 12px/1.5 Tahoma, Geneva, '微软雅黑', '宋体', \5b8b\4f53;}
+.message .m-list { padding: 10px 0; font: 12px/1.5 Tahoma, Geneva, '微软雅黑', '宋体', \5b8b\4f53;}
+.message .m-state { background-color: #f5f5f5; padding: 10px; overflow:hidden;zoom:1;font: 12px/1.5 Tahoma, Geneva, '微软雅黑', '宋体', \5b8b\4f53; }
+.message .m-state .m-s-td { float: left; height:26px; line-height:26px; padding-right: 10px; }
+.message .m-state .m-s-r { float: right;height:26px; line-height:26px; }
+.message .m-state .m-s-td .btn-b2 { margin-right: 10px; }
+.message .m-state .m-s-td input { margin-right: 5px; vertical-align:middle; }
+.message .m-page{font: 12px/1.5 Tahoma, Geneva, '微软雅黑', '宋体', \5b8b\4f53}
+.message .m-page input{vertical-align: middle;}
+.message .m-list li .m-title,
+.message .m-list li .m-title2 { width: 420px; text-overflow:ellipsis; font-size: 14px; float: left; }
+.message .m-list li .m-title2{ width: 480px; }
+.message .m-list li a{color: #4d4d4d}
+.message .m-list li a:hover{text-decoration: underline;color: #f60;}
+.Pager2 { float: left; }
+.Pager2 span{ color:#ff0000; font-size:13px; padding:2px;}
+.Pager { cursor:pointer; float: right; }
+.Pager a { border: 1px solid #cccccc; color: #555; padding:3px 6px 3px 6px; text-decoration:none; text-align:center; margin:0px 3px 3px 0px; font-size:13px; line-height:14px; vertical-align: middle;zoom:1 }
+.Pager a:hover ,.Pager a.CurrentPage{ color:#fff; background-color: #f98945; border-color: #e55904}
+.jump { line-height: 20px; height: 20px; width: 25px; vertical-align: middle; border: 1px solid #cccccc; text-align: center; }
+.go { background-repeat: no-repeat; height: 22px; width: 28px; border:none; vertical-align: middle; background-image: url(../images/shop-button.png); background-position: 0px -114px; }.message .m-page { overflow: hidden; zoom:1; padding: 20px; }
+.fb {font-weight: bold;}
+
+.message .m-list li:hover,.message .m-list .msg-bg{ background-color: #F4F4F4; }
+.m-list li .msg-type,.m-list li .msg-type-on { background-image: url(../images/safe_ico.png); background-repeat: no-repeat;  padding-left: 25px; color:#727272;}
+.m-list li .msg-type{background-position: 0px -130px;}
+.m-list li .msg-type-on{background-position: 0px -158px;}
+.m-list li .m-li-td2 {}
+
+
+/*=S 按钮 */
+.btn_com,.btn_com_disabled{ background-image: url(../images/com_btn.png); background-repeat: no-repeat;}
+.btn_com,.btn_com_disabled{ font-size: 15px; line-height: 36px; font-weight: bold; text-align: center; height: 37px; width: 106px; border: 0 none; cursor: pointer; display: inline-block; outline: 0 none; padding: 0; vertical-align: baseline;}
+.btn_com,.btn_com_disabled{background-position:0 -160px;color: #F2F2F2;}
+.btn_com:hover{ background-position:0 -197px }
+.btn-b1, .btn-b2, .btn-b2 i, .btn-b3, .btn-b3 input,.btn-b3-disabled,.btn-b3-disabled input { background-image: url(../images/com_btn.png);  color: #4D4D4D; }
+.btn-b1 { border: medium none currentcolor;cursor: pointer; display: inline-block; font-size: 12px; height: 20px; line-height: 20px; text-align: center; vertical-align: middle; background-repeat: no-repeat; background-position: 0px 0px; width: 48px; padding:0 0 2px 0; }
+.btn-b1:hover { background-position: 0px -22px; color: #c02802; text-decoration: none; }
+.btn-b2 { border: medium none currentcolor;cursor: pointer; display: inline-block; font-size: 12px; height: 24px; text-align: center; vertical-align: middle; line-height:24px; background-repeat: no-repeat; background-position: 0px -50px; padding:0 0 2px 8px; position: relative; }
+.btn-b2 i { background-repeat: no-repeat; background-position: right -76px; display: inline-block; padding-right: -8px; position: absolute; height: 26px; width: 8px; top: 0px; right: -8px; overflow: hidden; }
+.btn-b2:hover { background-position: 0px -102px; color: #c02802; text-decoration: none; }
+.btn-b2:hover i { background-position: right -128px; }
+.btn-b3,.btn-b3-disabled { display: inline-block; font-size: 12px; height: 26px;  vertical-align: middle; background-repeat: no-repeat; background-position: right -76px; padding-right:4px; text-align:left; }
+.btn-b3 input,.btn-b3-disabled input { border: medium none; height: 26px; line-height: 26px; background-position: 0px -50px; padding:0 4px 0 8px; cursor: pointer;*overflow:visible;}
+.btn-b3:hover{background-position: right -128px;}
+.btn-b3 input:hover{background-position: 0px -102px;}
+
+/*=E 验证结构*/
+/*=S 操作结果*/
+.action-state { padding-top: 50px; padding-bottom: 50px; }
+.no-info {height: 300px;background: url(../images/no-info.png) center 70px no-repeat;}
+.action-state .a-s-con { width: 240px; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; padding-left: 80px; background-image: url(../images/ico_big_tip.png); background-repeat: no-repeat;min-height:80px; _height:80px; }
+.action-state .success { background:url(../images/ico_big_success.png) no-repeat;}
+.action-state .a-s-con h3 {line-height: 30px;  padding: 0px;font:400  16px/30px '微软雅黑', '宋体', \5b8b\4f53;color: #4D4D4D }
+.action-state .a-s-con p { line-height: 20px; }
+.action-state .loading{ background-image: url(../images/loading.gif); background-repeat: no-repeat; background-position: center center; }
+
+/*重写弹出框头样式*/
+.ui_title{text-align: center;color: #666;font: 16px "微软雅黑";line-height: 40px;}
